@@ -39,7 +39,7 @@ class Melon(object):
 
     def df_to_csv(self):
         path = './data/melon.csv'
-        self.df.to_csv(path, sep=',', na_rep='NaN')
+        self.df.to_csv(path, sep=',', na_rep='NaN', encoding='utf-8-sig')
 
     @staticmethod
     def main():

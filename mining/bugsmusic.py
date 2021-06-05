@@ -39,7 +39,7 @@ class Bugsmusic(object):
 
     def df_to_csv(self):
         path = './data/bugs.csv'
-        self.df.to_csv(path, sep=',', na_rep='NaN')  # Nan -> 빈칸 처리
+        self.df.to_csv(path, sep=',', na_rep='NaN', encoding='utf-8-sig')  # Nan -> 빈칸 처리
 
 
 
