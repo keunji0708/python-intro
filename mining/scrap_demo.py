@@ -14,6 +14,6 @@ if __name__ == '__main__':
     
     <p class="story">...</p>
     '''
-    
+
     soup = BeautifulSoup(html, 'html.parser')
     print(soup.title.string)
